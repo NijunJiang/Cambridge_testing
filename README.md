@@ -12,8 +12,8 @@ Download link of the VGG-D (ImageNet) mdoel fine-tuned weights:https://drive.goo
 <br /><br />
 <br /><br />
 Testing procedures <br />
-1: Download a weight file.
-2: Download Manchester images into a folder called validation_raster_Manchester
-3: Download csv file that contains image paths and labels which are used after prediction is made to find the accuracy
-4: Download dataset_generator.py into the working directory
+1: Download a weight file.<br />
+2: Download Manchester images into a folder called validation_raster_Manchester<br />
+3: Download csv file that contains image paths and labels which are used after prediction is made to find the accuracy<br />
+4: Download dataset_generator.py into the working directory<br />
 5: Run the python script infer.py to load images and the model
