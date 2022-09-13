@@ -31,26 +31,26 @@ if model_name == 'resnet50_sen2':
     model.conv1 = nn.Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=True)
     num_ftrs = model.fc.in_features
     model.fc = nn.Linear(num_ftrs, 9)
-    model.load_state_dict(torch.load('CustomResent_weights_ResNet_sen2_true_bias_10epoch.pth'))
+    model.load_state_dict(torch.load('ResNet_weights_sentinel_2.pth'))
 
 
 if model_name == 'resnet50_imagenet':
     model = models.resnet50()
     num_ftrs = model.fc.in_features
     model.fc = nn.Linear(num_ftrs, 9)
-    model.load_state_dict(torch.load('CustomResent_weights_ResNet_imageNet_true_bias_15epoch.pth'))
+    model.load_state_dict(torch.load('ResNet_weights_ImageNet.pth'))
 
 if model_name == 'vgg11_imagenet':
     model = models.vgg11()
     model.classifier[6] = nn.Linear(in_features=4096, out_features=9, bias=True)
-    model.load_state_dict(torch.load('CustomVGG_weights_ResNet_imageNet_true_bias_15epoch.pth'))
+    model.load_state_dict(torch.load('VGG11_weights'))
 
 if model_name == 'vgg16_imagenet':
     model = models.vgg16()
     for param in model.parameters():
         param.requires_grad = False
     model.classifier[6] = nn.Linear(in_features=4096, out_features=9, bias=True)
-    model.load_state_dict(torch.load('CustomVGG16_5epoch.pth'))
+    model.load_state_dict(torch.load('VGG16_weights'))
 
 model.eval()
 model = model.to(device)
