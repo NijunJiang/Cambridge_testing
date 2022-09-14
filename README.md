@@ -10,6 +10,7 @@ Download link of the VGG-A (ImageNet) mdoel fine-tuned weights:https://drive.goo
 Download link of the VGG-D (ImageNet) mdoel fine-tuned weights:https://drive.google.com/file/d/18dgHxwo_A-HhCoT75AzJm_mbGNYJt68b/view?usp=sharing
 <br /><br />
 Manchester sentinel-2 images: https://drive.google.com/file/d/1e9jcXazT46iwQso4b5W9P1NuaPdBDxuY/view?usp=sharing <br />
+West Yorkshire sentinel-2 images: https://drive.google.com/file/d/1VIi1pckg0_S4oyKWdtbndsHjUPnJfAh_/view?usp=sharing
 <br /><br />
 <br /><br />
 Testing procedures <br />
