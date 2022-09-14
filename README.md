@@ -17,6 +17,6 @@ Testing procedures <br />
 1: Download a weight file.<br />
 2: Download Manchester images into a folder called validation_raster_Manchester<br />
 3: Download csv file pop_label_validation2_manchester.csv that contains image paths and labels which are used after prediction is made to find the accuracy<br />
-4 Download csv file pop_label_a3_testing.csv that contains definition of each class
+4 Download csv file pop_label_a3_testing.csv that contains definition of each class<br />
 5: Download dataset_generator.py into the working directory<br />
 6: Run the python script infer.py to load images and the model
